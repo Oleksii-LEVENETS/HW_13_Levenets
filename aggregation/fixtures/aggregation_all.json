@@ -1,0 +1,448 @@
+[
+{
+  "model": "aggregation.author",
+  "pk": 1,
+  "fields": {
+    "name": "Holly Alvarado",
+    "age": 94
+  }
+},
+{
+  "model": "aggregation.author",
+  "pk": 2,
+  "fields": {
+    "name": "Cynthia Davis",
+    "age": 35
+  }
+},
+{
+  "model": "aggregation.author",
+  "pk": 3,
+  "fields": {
+    "name": "Matthew Nguyen",
+    "age": 106
+  }
+},
+{
+  "model": "aggregation.author",
+  "pk": 4,
+  "fields": {
+    "name": "Paul Davenport",
+    "age": 82
+  }
+},
+{
+  "model": "aggregation.author",
+  "pk": 5,
+  "fields": {
+    "name": "Alexander Jones",
+    "age": 101
+  }
+},
+{
+  "model": "aggregation.author",
+  "pk": 6,
+  "fields": {
+    "name": "Ashley Morris",
+    "age": 35
+  }
+},
+{
+  "model": "aggregation.author",
+  "pk": 7,
+  "fields": {
+    "name": "Louis Ellis",
+    "age": 24
+  }
+},
+{
+  "model": "aggregation.author",
+  "pk": 8,
+  "fields": {
+    "name": "Mr. Michael Williams",
+    "age": 44
+  }
+},
+{
+  "model": "aggregation.author",
+  "pk": 9,
+  "fields": {
+    "name": "Christopher Brown",
+    "age": 85
+  }
+},
+{
+  "model": "aggregation.author",
+  "pk": 10,
+  "fields": {
+    "name": "Travis Curtis",
+    "age": 96
+  }
+},
+{
+  "model": "aggregation.publisher",
+  "pk": 1,
+  "fields": {
+    "name": "Publisher COUPLE"
+  }
+},
+{
+  "model": "aggregation.publisher",
+  "pk": 2,
+  "fields": {
+    "name": "Publisher PART"
+  }
+},
+{
+  "model": "aggregation.publisher",
+  "pk": 3,
+  "fields": {
+    "name": "Publisher SAME"
+  }
+},
+{
+  "model": "aggregation.publisher",
+  "pk": 4,
+  "fields": {
+    "name": "Publisher FIRM"
+  }
+},
+{
+  "model": "aggregation.publisher",
+  "pk": 5,
+  "fields": {
+    "name": "Publisher AGAINST"
+  }
+},
+{
+  "model": "aggregation.publisher",
+  "pk": 6,
+  "fields": {
+    "name": "Publisher BE"
+  }
+},
+{
+  "model": "aggregation.publisher",
+  "pk": 7,
+  "fields": {
+    "name": "Publisher OFF"
+  }
+},
+{
+  "model": "aggregation.publisher",
+  "pk": 8,
+  "fields": {
+    "name": "Publisher SPRING"
+  }
+},
+{
+  "model": "aggregation.publisher",
+  "pk": 9,
+  "fields": {
+    "name": "Publisher THEIR"
+  }
+},
+{
+  "model": "aggregation.publisher",
+  "pk": 10,
+  "fields": {
+    "name": "Publisher TELEVISION"
+  }
+},
+{
+  "model": "aggregation.book",
+  "pk": 1,
+  "fields": {
+    "name": "Economy sea.",
+    "pages": 560,
+    "price": "8.43",
+    "rating": 10.0,
+    "publisher": 2,
+    "pubdate": "1956-11-18",
+    "authors": [
+      5
+    ]
+  }
+},
+{
+  "model": "aggregation.book",
+  "pk": 2,
+  "fields": {
+    "name": "Skill book.",
+    "pages": 697,
+    "price": "3.77",
+    "rating": 3.33,
+    "publisher": 6,
+    "pubdate": "1982-11-01",
+    "authors": [
+      3
+    ]
+  }
+},
+{
+  "model": "aggregation.book",
+  "pk": 3,
+  "fields": {
+    "name": "Style pull.",
+    "pages": 108,
+    "price": "7.59",
+    "rating": 1.25,
+    "publisher": 6,
+    "pubdate": "2020-12-20",
+    "authors": [
+      9,
+      10
+    ]
+  }
+},
+{
+  "model": "aggregation.book",
+  "pk": 4,
+  "fields": {
+    "name": "Bag the team.",
+    "pages": 982,
+    "price": "1.54",
+    "rating": 1.25,
+    "publisher": 1,
+    "pubdate": "2003-08-20",
+    "authors": [
+      6
+    ]
+  }
+},
+{
+  "model": "aggregation.book",
+  "pk": 5,
+  "fields": {
+    "name": "Smile other.",
+    "pages": 666,
+    "price": "3.18",
+    "rating": 3.33,
+    "publisher": 7,
+    "pubdate": "1910-12-08",
+    "authors": [
+      5,
+      8
+    ]
+  }
+},
+{
+  "model": "aggregation.book",
+  "pk": 6,
+  "fields": {
+    "name": "Build kitchen.",
+    "pages": 706,
+    "price": "13.91",
+    "rating": 1.43,
+    "publisher": 7,
+    "pubdate": "1950-05-16",
+    "authors": [
+      6,
+      9
+    ]
+  }
+},
+{
+  "model": "aggregation.book",
+  "pk": 7,
+  "fields": {
+    "name": "Money teacher.",
+    "pages": 579,
+    "price": "12.25",
+    "rating": 2.0,
+    "publisher": 8,
+    "pubdate": "2004-08-26",
+    "authors": [
+      4
+    ]
+  }
+},
+{
+  "model": "aggregation.book",
+  "pk": 8,
+  "fields": {
+    "name": "Child over total.",
+    "pages": 902,
+    "price": "11.69",
+    "rating": 1.25,
+    "publisher": 8,
+    "pubdate": "1974-04-27",
+    "authors": [
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "aggregation.book",
+  "pk": 9,
+  "fields": {
+    "name": "Sign certain miss.",
+    "pages": 340,
+    "price": "3.79",
+    "rating": 1.25,
+    "publisher": 6,
+    "pubdate": "1913-07-19",
+    "authors": [
+      2,
+      8
+    ]
+  }
+},
+{
+  "model": "aggregation.book",
+  "pk": 10,
+  "fields": {
+    "name": "Rate matter.",
+    "pages": 326,
+    "price": "11.73",
+    "rating": 1.67,
+    "publisher": 7,
+    "pubdate": "2017-09-27",
+    "authors": [
+      2,
+      6
+    ]
+  }
+},
+{
+  "model": "aggregation.store",
+  "pk": 1,
+  "fields": {
+    "name": "Store Clear",
+    "books": [
+      1,
+      3,
+      8
+    ]
+  }
+},
+{
+  "model": "aggregation.store",
+  "pk": 2,
+  "fields": {
+    "name": "Store Cultural",
+    "books": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      8,
+      9,
+      10
+    ]
+  }
+},
+{
+  "model": "aggregation.store",
+  "pk": 3,
+  "fields": {
+    "name": "Store Smile",
+    "books": [
+      2,
+      4,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+},
+{
+  "model": "aggregation.store",
+  "pk": 4,
+  "fields": {
+    "name": "Store Total",
+    "books": [
+      7,
+      9
+    ]
+  }
+},
+{
+  "model": "aggregation.store",
+  "pk": 5,
+  "fields": {
+    "name": "Store Upon",
+    "books": [
+      3,
+      7,
+      8,
+      10
+    ]
+  }
+},
+{
+  "model": "aggregation.store",
+  "pk": 6,
+  "fields": {
+    "name": "Store Through",
+    "books": [
+      2,
+      3,
+      5,
+      9,
+      10
+    ]
+  }
+},
+{
+  "model": "aggregation.store",
+  "pk": 7,
+  "fields": {
+    "name": "Store Assume",
+    "books": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      10
+    ]
+  }
+},
+{
+  "model": "aggregation.store",
+  "pk": 8,
+  "fields": {
+    "name": "Store Produce",
+    "books": [
+      2,
+      4,
+      8,
+      9
+    ]
+  }
+},
+{
+  "model": "aggregation.store",
+  "pk": 9,
+  "fields": {
+    "name": "Store Computer",
+    "books": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+},
+{
+  "model": "aggregation.store",
+  "pk": 10,
+  "fields": {
+    "name": "Store Consumer",
+    "books": [
+      1,
+      4,
+      5,
+      6,
+      10
+    ]
+  }
+}
+]

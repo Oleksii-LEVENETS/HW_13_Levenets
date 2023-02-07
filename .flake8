@@ -13,5 +13,7 @@ exclude =
     tests.py,
     # There's no value in checking tests directory
     tests
+    # No need to traverse sandbox.py
+    sandbox.py
 
 max-complexity = 10
