@@ -1,0 +1,24 @@
+{% extends "aggregation/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authors List</title>
+</head>
+
+<body>
+{% block content %}
+
+<h1>Authors</h1>
+<ul>
+{% for author in object_list %}
+<li><h3><a href="{% url 'aggregation:author-detail' author.pk %}">#{{ author.id }}   {{ author }}</a></h3></li>
+{% empty %}
+    <li>No Authors yet.</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
+
+</body>
+</html>

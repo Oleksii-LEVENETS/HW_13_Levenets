@@ -30,4 +30,18 @@ https://docs.djangoproject.com/en/4.0/topics/db/aggregation/
 в темплейте для каждой страницы ({% url ... %}).
 10. с дитейл страницы должна быть ссылка на список ({% url ... %}).
 
+# Restore fresh DataBase
+```bash
+./manage.py loaddata aggregation/fixtures/fresh_db.json
+```
+
+or
+# Creating fake 10 Authors, 10 Publishers, 1000 Books, 10 Stores
+```bash
+./manage.py create_new_models 
+```
+# Creating fake 10 Users
+```bash
+./manage.py create_users 10
+```
 ===============================

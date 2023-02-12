@@ -1,3 +1,4 @@
+{% extends "aggregation/base.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +6,23 @@
     <title>Aggregation Index</title>
 </head>
 <body>
-Aggregation Index
+{% block content %}
 
+<h1>Aggregation App Page</h1>
 
-<hr>
-    <h3><a href="{% url 'base_project_page' %}">go back to Base Project Page</a></h3>
-<hr>
+<p>Welcome to <em>Aggregation App Page!</em></p>
 
+<h2>Content</h2>
+
+  <p>The Application has the following record counts:</p>
+  <ul>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+    <li><strong>Publishers:</strong> {{ num_publishers }}</li>
+    <li><strong>Books:</strong> {{ num_books }}</li>
+    <li><strong>Stories</strong> {{ num_stories }}</li>
+  </ul>
+
+{% endblock %}
 </body>
+
 </html>

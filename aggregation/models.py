@@ -7,14 +7,14 @@ class Author(models.Model):
     age = models.IntegerField()
 
     def __str__(self):
-        return f"{self.name} ({self.age} years)"
+        return self.name
 
 
 class Publisher(models.Model):
     name = models.CharField(max_length=300)
 
     def __str__(self):
-        return f"{self.name}"
+        return self.name
 
 
 class Book(models.Model):
@@ -27,7 +27,7 @@ class Book(models.Model):
     pubdate = models.DateField()
 
     def __str__(self):
-        return f"{self.name} ({self.pages} pages)"
+        return self.name
 
 
 class Store(models.Model):
@@ -35,4 +35,4 @@ class Store(models.Model):
     books = models.ManyToManyField(Book)
 
     def __str__(self):
-        return f"{self.name}"
+        return self.name
