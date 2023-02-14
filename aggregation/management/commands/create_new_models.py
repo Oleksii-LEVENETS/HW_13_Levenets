@@ -32,7 +32,7 @@ class Command(BaseCommand):
         authors_id = Author.objects.values_list('id', flat=True)
         publisher_id = Publisher.objects.values_list('id', flat=True)
 
-        # Creating 1000 Books
+        # Creating 500 Books
         for _ in range(500):
             book_name = fake.text(18)
             book_pages = random.randint(50, 500)
@@ -79,4 +79,4 @@ class Command(BaseCommand):
             store.books.set(books_list)
 
         self.stdout.write(self.style.SUCCESS(
-            f"Successfully created fake 10 Authors, 10 Publishers, 500 Books, 10 Stores"))
+            "Successfully created fake 10 Authors, 10 Publishers, 500 Books, 10 Stores"))

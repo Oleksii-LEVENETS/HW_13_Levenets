@@ -1,23 +1,26 @@
-{% extends "aggregation/base.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Authors List</title>
+    <title>Author List</title>
 </head>
-
 <body>
+
+{% extends "base_generic.html" %}
+
 {% block content %}
-
-<h1>Authors</h1>
-<ul>
-{% for author in object_list %}
-<li><h3><a href="{% url 'aggregation:author-detail' author.pk %}">#{{ author.id }}   {{ author }}</a></h3></li>
-{% empty %}
-    <li>No Authors yet.</li>
-{% endfor %}
-</ul>
-
+  <h1>Author List</h1>
+  {% if authors_books %}
+  <ul>
+    {% for author in authors_books %}
+      <li>
+        <a href="{{ author.get_absolute_url }}">{{ author }}</a> (ID: {{ author.id }},   {{ author.num }} books)
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no Authors.</p>
+  {% endif %}
 {% endblock %}
 
 </body>

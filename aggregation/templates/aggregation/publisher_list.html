@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publisher List</title>
+</head>
+<body>
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Publisher List</h1>
+  {% if publishers_books %}
+  <ul>
+    {% for publisher in publishers_books %}
+      <li>
+        <a href="{{ publisher.get_absolute_url }}">{{ publisher }}</a>
+          (ID: {{ publisher.id }}, {{ publisher.num }} books)
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no Publishers.</p>
+  {% endif %}
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store List</title>
+</head>
+<body>
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Store List</h1>
+  {% if stores_books %}
+  <ul>
+    {% for store in stores_books %}
+      <li>
+        <a href="{{ store.get_absolute_url }}">{{ store }}</a>  (ID: {{ store.id }}, {{ store.num }} books)
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no Stores.</p>
+  {% endif %}
+{% endblock %}
+
+</body>
+</html>

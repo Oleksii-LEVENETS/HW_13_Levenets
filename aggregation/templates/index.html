@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aggregate App Index Page</title>
+</head>
+<body>
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Aggregate App Home Page</h1>
+  <p>Welcome to <em>Aggregate App</em>!</p>
+  <h2>Dynamic content</h2>
+  <p>There are the following record counts:</p>
+  <ul>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+    <li><strong>Publishers:</strong> {{ num_publishers }}</li>
+    <li><strong>Books:</strong> {{ num_books }}</li>
+    <li><strong>Stores:</strong> {{ num_stores }}</li>
+
+  </ul>
+
+{% endblock %}
+
+</body>
+</html>
