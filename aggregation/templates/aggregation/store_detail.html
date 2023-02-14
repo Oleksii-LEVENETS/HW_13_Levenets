@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store Detail</title>
+</head>
+<body>
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Store: {{ store }}</h1>
+
+  <p><strong>Name:</strong> {{ store.name }}</p>
+  <p><strong>Total selling:</strong> {{ selling_total }} books</p>
+
+<div style="margin-left:20px;margin-top:20px">
+<h4>Books</h4>
+<dl>
+{% for book in store_books %}
+  <dt><a href="{% url 'aggregation:book-detail' book.pk %}">{{book}}</a>
+    (ID: {{ book.id }}. Price: {{ book.price }}$. Published: {{ book.pubdate }}. Rating: {{ book.rating }})
+{% endfor %}
+</dl>
+
+</div>
+
+{% endblock %}
+
+</body>
+</html>

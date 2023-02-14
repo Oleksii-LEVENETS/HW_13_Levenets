@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publisher Detail</title>
+</head>
+<body>
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Publisher: {{ publisher }}</h1>
+
+  <p><strong>Name:</strong> {{ publisher.name }}</p>
+  <p><strong>Total published:</strong> {{ published_total }} books</p>
+  <p><strong>Average Rating of all published books:</strong> {{ publisher_avg_rating }} (from 10)</p>
+
+
+<div style="margin-left:20px;margin-top:20px">
+<h4>Books</h4>
+<dl>
+{% for book in publisher_books %}
+  <dt><a href="{% url 'aggregation:book-detail' book.pk %}">{{book}}</a>
+    (ID: {{ book.id }}. Price: {{ book.price }}$. Published: {{ book.pubdate }}. Rating: {{ book.rating }})
+{% endfor %}
+</dl>
+
+</div>
+
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Detail</title>
+</head>
+<body>
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Title: {{ book.name }}</h1>
+
+  <p><strong>Authors:</strong></p>
+    {% if books_authors %}
+  <ul>
+    {% for author in books_authors %}
+      <li>
+        <a href="{{ author.get_absolute_url }}">{{ author }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>No available authors has the Book.</p>
+  {% endif %}
+
+
+  <p><strong>Pages:</strong> {{ book.pages }}</p>
+  <p><strong>Published:</strong> {{ book.pubdate }}</p>
+  <p><strong>Price:</strong> {{ book.price }} $</p>
+  <p><strong>Rating:</strong> {{ book.rating }}</p>
+  <p><strong>Publisher:</strong> {{ book.publisher }}</p>
+  <p><strong>Available in Stores:</strong></p>
+  {% if available_stores %}
+  <ul>
+    {% for store in available_stores %}
+      <li>
+        <a href="{{ store.get_absolute_url }}">{{ store }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>No Stores has the Book.</p>
+  {% endif %}
+
+{% endblock %}
+
+</body>
+</html>
