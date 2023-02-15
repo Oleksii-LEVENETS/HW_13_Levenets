@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reminder</title>
+</head>
+<body>
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Reminder</h1>
+
+    <form action="{% url 'aggregation:reminder_form' %}" method="POST">
+    {% csrf_token %}
+            {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+
+
+
+{% endblock %}
+
+</body>
+</html>

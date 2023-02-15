@@ -1,7 +1,12 @@
+from aggregation.forms import ReminderForm
 from aggregation.models import Author, Book, Publisher, Store
+from aggregation.tasks import tasks
+
 
 from django.db.models import Avg, Count
-from django.shortcuts import render
+from django.shortcuts import redirect, render
+from django.urls import reverse
+from django.utils import timezone
 from django.views import generic
 
 
@@ -116,3 +121,19 @@ class StoreDetailView(generic.DetailView):
         context['store_books'] = Book.objects.filter(store=self.object.id)
         context['selling_total'] = Book.objects.filter(store=self.object.id).count()
         return context
+
+
+def reminder_form(request):
+    now = timezone.now()
+    if request.method == "POST":
+        form = ReminderForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data.get("email")
+            reminder_text = form.cleaned_data.get("reminder_text")
+            date_time = form.cleaned_data.get("date_time")
+            tasks.reminder_task.apply_async(kwargs={"email": email, "reminder_text": reminder_text},
+                                            eta=date_time)
+            return redirect(reverse("aggregation:index"))
+    else:
+        form = ReminderForm(initial={"email": "example@dj.com", "date_time": now, "reminder_text": "Reminder"})
+    return render(request, "aggregation/reminder_form.html", {"form": form})
