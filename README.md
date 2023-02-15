@@ -1,7 +1,39 @@
+# HW_14_Levenets_PythonPro_Celery, django_email
 # HW_13_Levenets_PythonPro_annotate_aggregate
+==============================================
+HW_14: Celery, django_email.
+Заняття 15. Celery, send_email.
+
+1. Добавить страничку с формой (в базу ничего не сохранять, дизайн не важен - главное работоспособность).
+Форма принимает три поля - почта, текст напоминания и датавремя когда это напоминание получить.
+2. При отправки формы создается и откладывается задача, которая должна будет выполнится в указанное в форме время
+и отправить напоминание на указанную в форму почту.
+
+-- В теме письма можно указать просто "напоминание".
+-- Датавремя - учитывайте разницу в таймзонах, но для этого задания это будет не критично.
+-- Датавремя не может быть в прошлом, и не может быть более чем на 2 дня вперед.
+-- celeryproject.org/en/master/userguide/calling.html#eta-and-countdown
+-- Используйте отправку почты в консоль.
+
+https://docs.celeryproject.org/en/stable/userguide/calling.html#eta-and-countdown
+https://docs.djangoproject.com/en/4.1/topics/email/
+https://docs.djangoproject.com/en/4.1/topics/i18n/timezones/
+from django.utils import timezone
+now = timezone.now()
+
+```bash
+python3 manage.py runserver
+```
+```bash
+celery -A core worker -l INFO
+```
+```bash
+celery -A core  inspect scheduled
+```
+
+==============================================
 HW-13: annotate aggregate.
 Lesson-14. Django-debug-toolbar, select_related, prefetch_related, aggregate, annotate, Q, F.
-===============================
 ДЗ 13. annotate aggregate
 Створено: 03.02.2023 21:31
 Заняття 14. Django-debug-toolbar, select_related, prefetch_related, aggregate, annotate, Q, F
@@ -36,7 +68,7 @@ https://docs.djangoproject.com/en/4.0/topics/db/aggregation/
 ```
 
 or
-# Creating fake 10 Authors, 10 Publishers, 1000 Books, 10 Stores
+# Creating fake 10 Authors, 10 Publishers, 500 Books, 10 Stores
 ```bash
 ./manage.py create_new_models 
 ```
