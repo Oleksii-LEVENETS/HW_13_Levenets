@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote List</title>
+</head>
+<body>
+
+{% extends "quote/base_generic.html" %}
+
+{% block content %}
+  <h1>Quote List</h1>
+  {% if quote_list %}
+  <ul>
+    {% for quote in quote_list %}
+      <li>
+        <a href="{{ quote.get_absolute_url }}">{{ quote }}</a> (ID: {{ quote.id }},
+          "{{ quote.text }}")
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no Quotes.</p>
+  {% endif %}
+{% endblock %}
+
+</body>
+</html>

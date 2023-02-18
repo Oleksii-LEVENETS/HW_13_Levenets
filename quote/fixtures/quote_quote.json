@@ -1,0 +1,902 @@
+[
+{
+  "model": "quote.quote",
+  "pk": 1,
+  "fields": {
+    "title": "The world as we...",
+    "author": 1,
+    "text": "The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 2,
+  "fields": {
+    "title": "It is our choices,...",
+    "author": 2,
+    "text": "It is our choices, Harry, that show what we truly are, far more than our abilities."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 3,
+  "fields": {
+    "title": "There are only two...",
+    "author": 1,
+    "text": "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 4,
+  "fields": {
+    "title": "The person, be it...",
+    "author": 3,
+    "text": "The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 5,
+  "fields": {
+    "title": "Imperfection is beauty, madness...",
+    "author": 4,
+    "text": "Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 6,
+  "fields": {
+    "title": "Try not to become...",
+    "author": 1,
+    "text": "Try not to become a man of success. Rather become a man of value."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 7,
+  "fields": {
+    "title": "It is better to...",
+    "author": 5,
+    "text": "It is better to be hated for what you are than to be loved for what you are not."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 8,
+  "fields": {
+    "title": "I have not failed....",
+    "author": 6,
+    "text": "I have not failed. I've just found 10,000 ways that won't work."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 9,
+  "fields": {
+    "title": "A woman is like...",
+    "author": 7,
+    "text": "A woman is like a tea bag; you never know how strong it is until it's in hot water."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 10,
+  "fields": {
+    "title": "A day without sunshine...",
+    "author": 8,
+    "text": "A day without sunshine is like, you know, night."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 11,
+  "fields": {
+    "title": "This life is what...",
+    "author": 4,
+    "text": "This life is what you make it. No matter what, you're going to mess up sometimes, it's a universal truth. But the good part is you get to decide how you're going to mess it up. Girls will be your friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they're your true best friends. Don't let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can't give up because if you give up, you'll never find your soulmate. You'll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 12,
+  "fields": {
+    "title": "It takes a great...",
+    "author": 2,
+    "text": "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 13,
+  "fields": {
+    "title": "If you can't explain...",
+    "author": 1,
+    "text": "If you can't explain it to a six year old, you don't understand it yourself."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 14,
+  "fields": {
+    "title": "You may not be...",
+    "author": 9,
+    "text": "You may not be her first, her last, or her only. She loved before she may love again. But if she loves you now, what else matters? She's not perfect—you aren't either, and the two of you may never be perfect together but if she can make you laugh, cause you to think twice, and admit to being human and making mistakes, hold onto her and give her the most you can. She may not be thinking about you every second of the day, but she will give you a part of her that she knows you can break—her heart. So don't hurt her, don't change her, don't analyze and don't expect more than she can give. Smile when she makes you happy, let her know when she makes you mad, and miss her when she's not there."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 15,
+  "fields": {
+    "title": "I like nonsense, it...",
+    "author": 10,
+    "text": "I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 16,
+  "fields": {
+    "title": "I may not have...",
+    "author": 11,
+    "text": "I may not have gone where I intended to go, but I think I have ended up where I needed to be."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 17,
+  "fields": {
+    "title": "The opposite of love...",
+    "author": 12,
+    "text": "The opposite of love is not hate, it's indifference. The opposite of art is not ugliness, it's indifference. The opposite of faith is not heresy, it's indifference. And the opposite of life is not death, it's indifference."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 18,
+  "fields": {
+    "title": "It is not a...",
+    "author": 13,
+    "text": "It is not a lack of love, but a lack of friendship that makes unhappy marriages."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 19,
+  "fields": {
+    "title": "Good friends, good books,...",
+    "author": 14,
+    "text": "Good friends, good books, and a sleepy conscience: this is the ideal life."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 20,
+  "fields": {
+    "title": "Life is what happens...",
+    "author": 15,
+    "text": "Life is what happens to us while we are making other plans."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 21,
+  "fields": {
+    "title": "I love you without...",
+    "author": 16,
+    "text": "I love you without knowing how, or when, or from where. I love you simply, without problems or pride: I love you in this way because I do not know any other way of loving but this, in which there is no I or you, so intimate that your hand upon my chest is my hand, so intimate that when I fall asleep your eyes close."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 22,
+  "fields": {
+    "title": "For every minute you...",
+    "author": 17,
+    "text": "For every minute you are angry you lose sixty seconds of happiness."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 23,
+  "fields": {
+    "title": "If you judge people,...",
+    "author": 18,
+    "text": "If you judge people, you have no time to love them."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 24,
+  "fields": {
+    "title": "Anyone who thinks sitting...",
+    "author": 19,
+    "text": "Anyone who thinks sitting in church can make you a Christian must also think that sitting in a garage can make you a car."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 25,
+  "fields": {
+    "title": "Beauty is in the...",
+    "author": 20,
+    "text": "Beauty is in the eye of the beholder and it may be necessary from time to time to give a stupid or misinformed beholder a black eye."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 26,
+  "fields": {
+    "title": "Today you are You,...",
+    "author": 10,
+    "text": "Today you are You, that is truer than true. There is no one alive who is Youer than You."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 27,
+  "fields": {
+    "title": "If you want your...",
+    "author": 1,
+    "text": "If you want your children to be intelligent, read them fairy tales. If you want them to be more intelligent, read them more fairy tales."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 28,
+  "fields": {
+    "title": "It is impossible to...",
+    "author": 2,
+    "text": "It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 29,
+  "fields": {
+    "title": "Logic will get you...",
+    "author": 1,
+    "text": "Logic will get you from A to Z; imagination will get you everywhere."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 30,
+  "fields": {
+    "title": "One good thing about...",
+    "author": 9,
+    "text": "One good thing about music, when it hits you, you feel no pain."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 31,
+  "fields": {
+    "title": "The more that you...",
+    "author": 10,
+    "text": "The more that you read, the more things you will know. The more that you learn, the more places you'll go."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 32,
+  "fields": {
+    "title": "Of course it is...",
+    "author": 2,
+    "text": "Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?"
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 33,
+  "fields": {
+    "title": "The truth is, everyone...",
+    "author": 9,
+    "text": "The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 34,
+  "fields": {
+    "title": "Not all of us...",
+    "author": 18,
+    "text": "Not all of us can do great things. But we can do small things with great love."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 35,
+  "fields": {
+    "title": "To the well-organized mind,...",
+    "author": 2,
+    "text": "To the well-organized mind, death is but the next great adventure."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 36,
+  "fields": {
+    "title": "All you need is...",
+    "author": 21,
+    "text": "All you need is love. But a little chocolate now and then doesn't hurt."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 37,
+  "fields": {
+    "title": "We read to know...",
+    "author": 22,
+    "text": "We read to know we're not alone."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 38,
+  "fields": {
+    "title": "Any fool can know....",
+    "author": 1,
+    "text": "Any fool can know. The point is to understand."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 39,
+  "fields": {
+    "title": "I have always imagined...",
+    "author": 23,
+    "text": "I have always imagined that Paradise will be a kind of library."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 40,
+  "fields": {
+    "title": "It is never too...",
+    "author": 24,
+    "text": "It is never too late to be what you might have been."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 41,
+  "fields": {
+    "title": "A reader lives a...",
+    "author": 25,
+    "text": "A reader lives a thousand lives before he dies, said Jojen. The man who never reads lives only one."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 42,
+  "fields": {
+    "title": "You can never get...",
+    "author": 26,
+    "text": "You can never get a cup of tea large enough or a book long enough to suit me."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 43,
+  "fields": {
+    "title": "You believe lies so...",
+    "author": 4,
+    "text": "You believe lies so you eventually learn to trust no one but yourself."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 44,
+  "fields": {
+    "title": "If you can make...",
+    "author": 4,
+    "text": "If you can make a woman laugh, you can make her do anything."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 45,
+  "fields": {
+    "title": "Life is like riding...",
+    "author": 1,
+    "text": "Life is like riding a bicycle. To keep your balance, you must keep moving."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 46,
+  "fields": {
+    "title": "The real lover is...",
+    "author": 4,
+    "text": "The real lover is the man who can thrill you by kissing your forehead or smiling into your eyes or just staring into space."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 47,
+  "fields": {
+    "title": "A wise girl kisses...",
+    "author": 4,
+    "text": "A wise girl kisses but doesn't love, listens but doesn't believe, and leaves before she is left."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 48,
+  "fields": {
+    "title": "Only in the darkness...",
+    "author": 27,
+    "text": "Only in the darkness can you see the stars."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 49,
+  "fields": {
+    "title": "It matters not what...",
+    "author": 2,
+    "text": "It matters not what someone is born, but what they grow to be."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 50,
+  "fields": {
+    "title": "Love does not begin...",
+    "author": 28,
+    "text": "Love does not begin and end the way we seem to think it does. Love is a battle, love is a war; love is a growing up."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 51,
+  "fields": {
+    "title": "There is nothing I...",
+    "author": 3,
+    "text": "There is nothing I would not do for those who are really my friends. I have no notion of loving people by halves, it is not my nature."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 52,
+  "fields": {
+    "title": "Do one thing every...",
+    "author": 7,
+    "text": "Do one thing every day that scares you."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 53,
+  "fields": {
+    "title": "I am good, but...",
+    "author": 4,
+    "text": "I am good, but not an angel. I do sin, but I am not the devil. I am just a small girl in a big world trying to find someone to love."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 54,
+  "fields": {
+    "title": "If I were not...",
+    "author": 1,
+    "text": "If I were not a physicist, I would probably be a musician. I often think in music. I live my daydreams in music. I see my life in terms of music."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 55,
+  "fields": {
+    "title": "If you only read...",
+    "author": 29,
+    "text": "If you only read the books that everyone else is reading, you can only think what everyone else is thinking."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 56,
+  "fields": {
+    "title": "The difference between genius...",
+    "author": 30,
+    "text": "The difference between genius and stupidity is: genius has its limits."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 57,
+  "fields": {
+    "title": "He's like a drug...",
+    "author": 31,
+    "text": "He's like a drug for you, Bella."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 58,
+  "fields": {
+    "title": "There is no friend...",
+    "author": 32,
+    "text": "There is no friend as loyal as a book."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 59,
+  "fields": {
+    "title": "When one door of...",
+    "author": 33,
+    "text": "When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 60,
+  "fields": {
+    "title": "Life isn't about finding...",
+    "author": 34,
+    "text": "Life isn't about finding yourself. Life is about creating yourself."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 61,
+  "fields": {
+    "title": "That's the problem with...",
+    "author": 35,
+    "text": "That's the problem with drinking, I thought, as I poured myself a drink. If something bad happens you drink in an attempt to forget; if something good happens you drink in order to celebrate; and if nothing happens you drink to make something happen."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 62,
+  "fields": {
+    "title": "You dont forget the...",
+    "author": 36,
+    "text": "You dont forget the face of the person who was your last hope."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 63,
+  "fields": {
+    "title": "Remember, we're madly in...",
+    "author": 36,
+    "text": "Remember, we're madly in love, so it's all right to kiss me anytime you feel like it."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 64,
+  "fields": {
+    "title": "To love at all...",
+    "author": 26,
+    "text": "To love at all is to be vulnerable. Love anything and your heart will be wrung and possibly broken. If you want to make sure of keeping it intact you must give it to no one, not even an animal. Wrap it carefully round with hobbies and little luxuries; avoid all entanglements. Lock it up safe in the casket or coffin of your selfishness. But in that casket, safe, dark, motionless, airless, it will change. It will not be broken; it will become unbreakable, impenetrable, irredeemable. To love is to be vulnerable."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 65,
+  "fields": {
+    "title": "Not all those who...",
+    "author": 37,
+    "text": "Not all those who wander are lost."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 66,
+  "fields": {
+    "title": "Do not pity the...",
+    "author": 2,
+    "text": "Do not pity the dead, Harry. Pity the living, and, above all those who live without love."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 67,
+  "fields": {
+    "title": "There is nothing to...",
+    "author": 32,
+    "text": "There is nothing to writing. All you do is sit down at a typewriter and bleed."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 68,
+  "fields": {
+    "title": "Finish each day and...",
+    "author": 17,
+    "text": "Finish each day and be done with it. You have done what you could. Some blunders and absurdities no doubt crept in; forget them as soon as you can. Tomorrow is a new day. You shall begin it serenely and with too high a spirit to be encumbered with your old nonsense."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 69,
+  "fields": {
+    "title": "I have never let...",
+    "author": 14,
+    "text": "I have never let my schooling interfere with my education."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 70,
+  "fields": {
+    "title": "I have heard there...",
+    "author": 10,
+    "text": "I have heard there are troubles of more than one kind. Some come from ahead and some come from behind. But I've bought a big bat. I'm all ready you see. Now my troubles are going to have troubles with me!"
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 71,
+  "fields": {
+    "title": "If I had a...",
+    "author": 38,
+    "text": "If I had a flower for every time I thought of you...I could walk through my garden forever."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 72,
+  "fields": {
+    "title": "Some people never go...",
+    "author": 35,
+    "text": "Some people never go crazy. What truly horrible lives they must lead."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 73,
+  "fields": {
+    "title": "The trouble with having...",
+    "author": 39,
+    "text": "The trouble with having an open mind, of course, is that people will insist on coming along and trying to put things in it."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 74,
+  "fields": {
+    "title": "Think left and think...",
+    "author": 10,
+    "text": "Think left and think right and think low and think high. Oh, the thinks you can think up if only you try!"
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 75,
+  "fields": {
+    "title": "What really knocks me...",
+    "author": 40,
+    "text": "What really knocks me out is a book that, when you're all done reading it, you wish the author that wrote it was a terrific friend of yours and you could call him up on the phone whenever you felt like it. That doesn't happen much, though."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 76,
+  "fields": {
+    "title": "The reason I talk...",
+    "author": 41,
+    "text": "The reason I talk to myself is because Im the only one whose answers I accept."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 77,
+  "fields": {
+    "title": "You may say I'm...",
+    "author": 42,
+    "text": "You may say I'm a dreamer, but I'm not the only one. I hope someday you'll join us. And the world will live as one."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 78,
+  "fields": {
+    "title": "I am free of...",
+    "author": 43,
+    "text": "I am free of all prejudice. I hate everyone equally. "
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 79,
+  "fields": {
+    "title": "The question isn't who...",
+    "author": 44,
+    "text": "The question isn't who is going to let me; it's who is going to stop me."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 80,
+  "fields": {
+    "title": "′Classic′ - a book...",
+    "author": 14,
+    "text": "′Classic′ - a book which people praise and don't read."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 81,
+  "fields": {
+    "title": "Anyone who has never...",
+    "author": 1,
+    "text": "Anyone who has never made a mistake has never tried anything new."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 82,
+  "fields": {
+    "title": "A lady's imagination is...",
+    "author": 3,
+    "text": "A lady's imagination is very rapid; it jumps from admiration to love, from love to matrimony in a moment."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 83,
+  "fields": {
+    "title": "Remember, if the time...",
+    "author": 2,
+    "text": "Remember, if the time should come when you have to make a choice between what is right and what is easy, remember what happened to a boy who was good, and kind, and brave, because he strayed across the path of Lord Voldemort. Remember Cedric Diggory."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 84,
+  "fields": {
+    "title": "I declare after all...",
+    "author": 3,
+    "text": "I declare after all there is no enjoyment like reading! How much sooner one tires of any thing than of a book! -- When I have a house of my own, I shall be miserable if I have not an excellent library."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 85,
+  "fields": {
+    "title": "There are few people...",
+    "author": 3,
+    "text": "There are few people whom I really love, and still fewer of whom I think well. The more I see of the world, the more am I dissatisfied with it; and every day confirms my belief of the inconsistency of all human characters, and of the little dependence that can be placed on the appearance of merit or sense."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 86,
+  "fields": {
+    "title": "Some day you will...",
+    "author": 26,
+    "text": "Some day you will be old enough to start reading fairy tales again."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 87,
+  "fields": {
+    "title": "We are not necessarily...",
+    "author": 26,
+    "text": "We are not necessarily doubting that God will do the best for us; we are wondering how painful the best will turn out to be."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 88,
+  "fields": {
+    "title": "The fear of death...",
+    "author": 14,
+    "text": "The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 89,
+  "fields": {
+    "title": "A lie can travel...",
+    "author": 14,
+    "text": "A lie can travel half way around the world while the truth is putting on its shoes."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 90,
+  "fields": {
+    "title": "I believe in Christianity...",
+    "author": 26,
+    "text": "I believe in Christianity as I believe that the sun has risen: not only because I see it, but because by it I see everything else."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 91,
+  "fields": {
+    "title": "The truth.\" Dumbledore sighed....",
+    "author": 2,
+    "text": "The truth.\" Dumbledore sighed. \"It is a beautiful and terrible thing, and should therefore be treated with great caution."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 92,
+  "fields": {
+    "title": "I'm the one that's...",
+    "author": 45,
+    "text": "I'm the one that's got to die when it's time for me to die, so let me live my life the way I want to."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 93,
+  "fields": {
+    "title": "To die will be...",
+    "author": 46,
+    "text": "To die will be an awfully big adventure."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 94,
+  "fields": {
+    "title": "It takes courage to...",
+    "author": 47,
+    "text": "It takes courage to grow up and become who you really are."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 95,
+  "fields": {
+    "title": "But better to get...",
+    "author": 48,
+    "text": "But better to get hurt by the truth than comforted with a lie."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 96,
+  "fields": {
+    "title": "You never really understand...",
+    "author": 49,
+    "text": "You never really understand a person until you consider things from his point of view... Until you climb inside of his skin and walk around in it."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 97,
+  "fields": {
+    "title": "You have to write...",
+    "author": 50,
+    "text": "You have to write the book that wants to be written. And if the book will be too difficult for grown-ups, then you write it for children."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 98,
+  "fields": {
+    "title": "Never tell the truth...",
+    "author": 14,
+    "text": "Never tell the truth to people who are not worthy of it."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 99,
+  "fields": {
+    "title": "A person's a person,...",
+    "author": 10,
+    "text": "A person's a person, no matter how small."
+  }
+},
+{
+  "model": "quote.quote",
+  "pk": 100,
+  "fields": {
+    "title": "... a mind needs...",
+    "author": 25,
+    "text": "... a mind needs books as a sword needs a whetstone, if it is to keep its edge."
+  }
+}
+]

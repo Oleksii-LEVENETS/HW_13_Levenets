@@ -1,5 +1,31 @@
+# HW_15_Levenets_PythonPro_Celery beat
 # HW_14_Levenets_PythonPro_Celery, django_email
 # HW_13_Levenets_PythonPro_annotate_aggregate
+==============================================
+HW_15: Celery beat.
+Заняття 16. Celery, celery beat, parsing, BeautifulSoup
+
+1. Добавить модели Авторов и Цитат (не забываем о связях), и зарегистрируйте их в админке.
+Использовать ресурс https://quotes.toscrape.com/
+2. Создать периодическую задачу которая будет добавлять по 5 НОВЫХ цитат (и их авторов с информацией) 
+каждый нечетный час. Когда цитаты закончатся - отправьте "себе" уведомление по почте что больше нет цитат (в консоль).
+
+```bash
+python3 manage.py runserver
+```
+```bash
+python3 manage.py migrate
+```
+```bash
+celery -A core worker -l INFO
+```
+```bash
+celery -A core  inspect scheduled
+```
+```bash
+celery -A core worker -B -l INFO
+```
+
 ==============================================
 HW_14: Celery, django_email.
 Заняття 15. Celery, send_email.

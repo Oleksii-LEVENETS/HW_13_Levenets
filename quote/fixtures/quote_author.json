@@ -1,0 +1,502 @@
+[
+{
+  "model": "quote.author",
+  "pk": 1,
+  "fields": {
+    "first_name": "Albert",
+    "last_name": "Einstein",
+    "date_of_birth": "1879-03-14",
+    "place_of_birth": "in Ulm, Germany"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 2,
+  "fields": {
+    "first_name": "J.K.",
+    "last_name": "Rowling",
+    "date_of_birth": "1965-07-31",
+    "place_of_birth": "in Yate, South Gloucestershire, England, The United Kingdom"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 3,
+  "fields": {
+    "first_name": "Jane",
+    "last_name": "Austen",
+    "date_of_birth": "1775-12-16",
+    "place_of_birth": "in Steventon Rectory, Hampshire, The United Kingdom"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 4,
+  "fields": {
+    "first_name": "Marilyn",
+    "last_name": "Monroe",
+    "date_of_birth": "1926-06-01",
+    "place_of_birth": "in The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 5,
+  "fields": {
+    "first_name": "André",
+    "last_name": "Gide",
+    "date_of_birth": "1869-11-22",
+    "place_of_birth": "in Paris, France"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 6,
+  "fields": {
+    "first_name": "Thomas",
+    "last_name": "A. Edison",
+    "date_of_birth": "1847-02-11",
+    "place_of_birth": "in Milan, Ohio, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 7,
+  "fields": {
+    "first_name": "Eleanor",
+    "last_name": "Roosevelt",
+    "date_of_birth": "1884-10-11",
+    "place_of_birth": "in The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 8,
+  "fields": {
+    "first_name": "Steve",
+    "last_name": "Martin",
+    "date_of_birth": "1945-08-14",
+    "place_of_birth": "in Waco, Texas, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 9,
+  "fields": {
+    "first_name": "Bob",
+    "last_name": "Marley",
+    "date_of_birth": "1945-02-06",
+    "place_of_birth": "in Nine Mile, Saint Ann, Jamaica"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 10,
+  "fields": {
+    "first_name": "Dr.",
+    "last_name": "Seuss",
+    "date_of_birth": "1904-03-02",
+    "place_of_birth": "in Springfield, MA, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 11,
+  "fields": {
+    "first_name": "Douglas",
+    "last_name": "Adams",
+    "date_of_birth": "1952-03-11",
+    "place_of_birth": "in Cambridge, England, The United Kingdom"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 12,
+  "fields": {
+    "first_name": "Elie",
+    "last_name": "Wiesel",
+    "date_of_birth": "1928-09-30",
+    "place_of_birth": "in Sighet, Romania"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 13,
+  "fields": {
+    "first_name": "Friedrich",
+    "last_name": "Nietzsche",
+    "date_of_birth": "1844-10-15",
+    "place_of_birth": "in Röcken bei Lützen, Prussian Province of Saxony, Germany"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 14,
+  "fields": {
+    "first_name": "Mark",
+    "last_name": "Twain",
+    "date_of_birth": "1835-11-30",
+    "place_of_birth": "in Florida, Missouri, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 15,
+  "fields": {
+    "first_name": "Allen",
+    "last_name": "Saunders",
+    "date_of_birth": "1899-04-24",
+    "place_of_birth": "in The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 16,
+  "fields": {
+    "first_name": "Pablo",
+    "last_name": "Neruda",
+    "date_of_birth": "1904-07-12",
+    "place_of_birth": "in Parral, Chile"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 17,
+  "fields": {
+    "first_name": "Ralph",
+    "last_name": "Waldo Emerson",
+    "date_of_birth": "1803-05-25",
+    "place_of_birth": "in Boston, Massachusetts, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 18,
+  "fields": {
+    "first_name": "Mother",
+    "last_name": "Teresa",
+    "date_of_birth": "1910-08-26",
+    "place_of_birth": "in Skopje, Macedonia, the Former Yugoslav Republic of"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 19,
+  "fields": {
+    "first_name": "Garrison",
+    "last_name": "Keillor",
+    "date_of_birth": "1942-08-07",
+    "place_of_birth": "in Anoka, Minnesota, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 20,
+  "fields": {
+    "first_name": "Jim",
+    "last_name": "Henson",
+    "date_of_birth": "1936-09-24",
+    "place_of_birth": "in Greenville, Mississippi, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 21,
+  "fields": {
+    "first_name": "Charles",
+    "last_name": "M. Schulz",
+    "date_of_birth": "1922-11-26",
+    "place_of_birth": "in Minneapolis, MN, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 22,
+  "fields": {
+    "first_name": "William",
+    "last_name": "Nicholson",
+    "date_of_birth": "1948-01-12",
+    "place_of_birth": "in Lewes, Sussex, The United Kingdom"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 23,
+  "fields": {
+    "first_name": "Jorge",
+    "last_name": "Luis Borges",
+    "date_of_birth": "1899-08-24",
+    "place_of_birth": "in Buenos Aires, Argentina"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 24,
+  "fields": {
+    "first_name": "George",
+    "last_name": "Eliot",
+    "date_of_birth": "1819-11-22",
+    "place_of_birth": "in South Farm, Arbury Hall, Nuneaton, Warwickshire, The United Kingdom"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 25,
+  "fields": {
+    "first_name": "George",
+    "last_name": "R.R. Martin",
+    "date_of_birth": "1948-09-20",
+    "place_of_birth": "in Bayonne, New Jersey, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 26,
+  "fields": {
+    "first_name": "C.S.",
+    "last_name": "Lewis",
+    "date_of_birth": "1898-11-29",
+    "place_of_birth": "in Belfast, Ireland"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 27,
+  "fields": {
+    "first_name": "Martin",
+    "last_name": "Luther King Jr.",
+    "date_of_birth": "1929-01-15",
+    "place_of_birth": "in Atlanta, Georgia, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 28,
+  "fields": {
+    "first_name": "James",
+    "last_name": "Baldwin",
+    "date_of_birth": "1924-08-02",
+    "place_of_birth": "in Harlem, New York, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 29,
+  "fields": {
+    "first_name": "Haruki",
+    "last_name": "Murakami",
+    "date_of_birth": "1949-01-12",
+    "place_of_birth": "in Kyoto, Japan"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 30,
+  "fields": {
+    "first_name": "Alexandre",
+    "last_name": "Dumas fils",
+    "date_of_birth": "1824-07-27",
+    "place_of_birth": "in Paris, France"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 31,
+  "fields": {
+    "first_name": "Stephenie",
+    "last_name": "Meyer",
+    "date_of_birth": "1973-12-24",
+    "place_of_birth": "in Connecticut, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 32,
+  "fields": {
+    "first_name": "Ernest",
+    "last_name": "Hemingway",
+    "date_of_birth": "1899-07-21",
+    "place_of_birth": "in Oak Park, Illinois, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 33,
+  "fields": {
+    "first_name": "Helen",
+    "last_name": "Keller",
+    "date_of_birth": "1880-06-27",
+    "place_of_birth": "in Tuscumbia, Alabama, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 34,
+  "fields": {
+    "first_name": "George",
+    "last_name": "Bernard Shaw",
+    "date_of_birth": "1856-07-26",
+    "place_of_birth": "in Dublin, Ireland"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 35,
+  "fields": {
+    "first_name": "Charles",
+    "last_name": "Bukowski",
+    "date_of_birth": "1920-08-16",
+    "place_of_birth": "in Andernach, Germany"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 36,
+  "fields": {
+    "first_name": "Suzanne",
+    "last_name": "Collins",
+    "date_of_birth": "1962-08-11",
+    "place_of_birth": "in Hartford, Connecticut, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 37,
+  "fields": {
+    "first_name": "J.R.R.",
+    "last_name": "Tolkien",
+    "date_of_birth": "1892-01-03",
+    "place_of_birth": "in Bloemfontein, Mangaung, Free State, South Africa"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 38,
+  "fields": {
+    "first_name": "Alfred",
+    "last_name": "Tennyson",
+    "date_of_birth": "1809-08-06",
+    "place_of_birth": "in Somersby, Lincolnshire, The United Kingdom"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 39,
+  "fields": {
+    "first_name": "Terry",
+    "last_name": "Pratchett",
+    "date_of_birth": "1948-04-28",
+    "place_of_birth": "in Beaconsfield, Buckinghamshire, England, The United Kingdom"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 40,
+  "fields": {
+    "first_name": "J.D.",
+    "last_name": "Salinger",
+    "date_of_birth": "1919-01-01",
+    "place_of_birth": "in Manhattan, New York, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 41,
+  "fields": {
+    "first_name": "George",
+    "last_name": "Carlin",
+    "date_of_birth": "1937-05-12",
+    "place_of_birth": "in New York, New York, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 42,
+  "fields": {
+    "first_name": "John",
+    "last_name": "Lennon",
+    "date_of_birth": "1940-10-09",
+    "place_of_birth": "in Liverpool, England, The United Kingdom"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 43,
+  "fields": {
+    "first_name": "W.C.",
+    "last_name": "Fields",
+    "date_of_birth": "1880-01-29",
+    "place_of_birth": "in Darby, Pennsylvania, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 44,
+  "fields": {
+    "first_name": "Ayn",
+    "last_name": "Rand",
+    "date_of_birth": "1905-02-02",
+    "place_of_birth": "in St. Petersburg, Russian Federation"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 45,
+  "fields": {
+    "first_name": "Jimi",
+    "last_name": "Hendrix",
+    "date_of_birth": "1942-11-27",
+    "place_of_birth": "in Seattle, Washington, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 46,
+  "fields": {
+    "first_name": "J.M.",
+    "last_name": "Barrie",
+    "date_of_birth": "1860-05-09",
+    "place_of_birth": "in Kirriemuir, Angus, Scotland, The United Kingdom"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 47,
+  "fields": {
+    "first_name": "E.E.",
+    "last_name": "Cummings",
+    "date_of_birth": "1894-10-14",
+    "place_of_birth": "in Cambridge, Massachusetts, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 48,
+  "fields": {
+    "first_name": "Khaled",
+    "last_name": "Hosseini",
+    "date_of_birth": "1965-03-04",
+    "place_of_birth": "in Kabul, Afghanistan"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 49,
+  "fields": {
+    "first_name": "Harper",
+    "last_name": "Lee",
+    "date_of_birth": "1926-04-28",
+    "place_of_birth": "in Monroeville, Alabama, The United States"
+  }
+},
+{
+  "model": "quote.author",
+  "pk": 50,
+  "fields": {
+    "first_name": "Madeleine",
+    "last_name": "L'Engle",
+    "date_of_birth": "1918-11-29",
+    "place_of_birth": "in New York City, New York, The United States"
+  }
+}
+]
