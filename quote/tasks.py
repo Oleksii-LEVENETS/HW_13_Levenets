@@ -13,7 +13,7 @@ import requests
 
 
 # Helping function: Checking the connection to the site:
-@shared_task
+# @shared_task
 def check_connection(url):
     try:
         response = requests.get(url)
@@ -29,6 +29,7 @@ def check_connection(url):
 @shared_task
 def author_quote():
     page = 1
+    count_5 = 0
     while True:
         # https://quotes.toscrape.com/page/1/   -- the first page of the site
         url = f"https://quotes.toscrape.com/page/{page}/"
@@ -54,9 +55,9 @@ def author_quote():
                 quote['first_name'] = name_author[0]
                 quote['last_name'] = " ".join(name_author[1:])
                 quote_list.append(quote)
-            flag_5 = save_5(quote_list)  # Helping function: Saving 5 quotes from one page
-            if flag_5 is True:
-                break
+            count_5 = save_5(quote_list, count_5)  # Helping function: Saving 5 quotes from one page
+            if count_5 == 5:
+                break  # Stops after saving 5 quotes per one work
             page += 1
 
         except Exception as e:
@@ -65,7 +66,7 @@ def author_quote():
 
 
 # Helping function: Parsing authors page
-@shared_task
+# @shared_task
 def author_data(url_author):
     check_connection(url_author)
     try:
@@ -91,9 +92,8 @@ def author_data(url_author):
 
 
 # Helping function: Saving 5 quotes from one page
-@shared_task
-def save_5(quote_list):
-    count_5 = 0
+# @shared_task
+def save_5(quote_list, count_5):
     for q in quote_list:
         try:
             author = Author.objects.get(first_name=q['first_name'], last_name=q['last_name'],
@@ -117,14 +117,12 @@ def save_5(quote_list):
             )
             count_5 += 1
             if count_5 == 5:
-                flag_5 = True
-                return flag_5  # Stop main function
-    flag_5 = False
-    return flag_5  # The main function gives another page or sends email
+                return count_5  # Stop main function after saving 5 quotes per one work
+    return count_5  # The main function gives another page or sends email
 
 
 # Helping function: Sends email when all quotes are in DataBase
-@shared_task
+# @shared_task
 def email_end():
     send_mail(
         f"HW_15. About Quotes. Now is: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",

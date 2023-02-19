@@ -26,6 +26,7 @@ app.conf.beat_schedule = {
     # executes every odd hour
     'author-quote': {
         'task': 'quote.tasks.author_quote',
-        'schedule': crontab(hour='1-23/2'),
+        'schedule': crontab(minute=0, hour='1-23/2'),
+        # 'schedule': crontab(),
     }
 }

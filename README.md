@@ -17,10 +17,7 @@ python3 manage.py runserver
 python3 manage.py migrate
 ```
 ```bash
-celery -A core worker -l INFO
-```
-```bash
-celery -A core  inspect scheduled
+./manage.py loaddata aggregation/fixtures/fresh_db.json  # там user-Admin
 ```
 ```bash
 celery -A core worker -B -l INFO
