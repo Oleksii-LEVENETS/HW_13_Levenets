@@ -23,6 +23,7 @@ urlpatterns = [
 
     path('', TemplateView.as_view(template_name="base_project_page.html"), name='base_project_page'),
     path('aggregation/', include('aggregation.urls')),
+    path('quote/', include('quote.urls')),
 ]
 
 if settings.DEBUG:

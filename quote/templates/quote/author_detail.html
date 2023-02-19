@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Author Quote Detail</title>
+</head>
+<body>
+
+{% extends "quote/base_generic.html" %}
+
+{% block content %}
+  <h1>Author: {{ author }}</h1>
+
+  <p><strong>Name:</strong> {{ author.first_name }}</p>
+  <p><strong>Surname:</strong> {{ author.last_name }}</p>
+  <p><strong>Date of birth:</strong> {{ author.date_of_birth }}</p>
+  <p><strong>Place of birth:</strong> {{ author.place_of_birth }}</p>
+  <p><strong>Quotes total</strong> {{ quotes_total }}</p>
+
+
+<div style="margin-left:20px;margin-top:20px">
+<h4>Quotes</h4>
+<dl>
+
+{% for quote in author_quotes %}
+  <dt><a href="{% url 'quote:quote-detail' quote.pk %}">{{quote.title}}</a> ("{{ quote.text }}",   ID: {{ quote.pk }})
+
+{% endfor %}
+</dl>
+
+</div>
+
+{% endblock %}
+
+</body>
+</html>

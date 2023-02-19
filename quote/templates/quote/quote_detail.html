@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote Detail</title>
+</head>
+<body>
+
+{% extends "quote/base_generic.html" %}
+
+{% block content %}
+
+  <h2>Quote:</h2>
+<hr>
+
+  <h1>"{{ quote.text }}"</h1>
+
+  <p><strong>Author:</strong></p>
+    {% if quote_author %}
+        <a href="{{ quote_author.get_absolute_url }}"> {{ quote_author }} </a>
+
+    {% else %}
+    <p>No available Author has the Quote.</p>
+    {% endif %}
+
+{% endblock %}
+
+</body>
+</html>
