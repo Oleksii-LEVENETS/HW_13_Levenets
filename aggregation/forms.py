@@ -2,7 +2,7 @@ import datetime
 
 from django import forms
 from django.core.exceptions import ValidationError
-from django.core.mail import send_mail, BadHeaderError
+from django.core.mail import BadHeaderError, send_mail
 from django.http import HttpResponse
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
@@ -45,7 +45,7 @@ class ContactForm(forms.Form):
     message = forms.CharField(widget=forms.Textarea, max_length=2000)
 
     def send_email(self):
-        subject = f"Website Inquiry. UTC: {timezone.now()}"
+        subject = "Website Inquiry."
         body = {
             'first_name': self.cleaned_data['first_name'],
             'last_name': self.cleaned_data['last_name'],

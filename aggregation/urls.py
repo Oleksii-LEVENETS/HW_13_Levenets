@@ -1,4 +1,4 @@
-from django.urls import path, include
+from django.urls import path
 
 from . import views
 
@@ -11,7 +11,7 @@ urlpatterns = [
     path('author_list/', views.AuthorListView.as_view(), name='author-list'),
     path('publisher_list/', views.PublisherListView.as_view(), name='publisher-list'),
     path('store_list/', views.StoreListView.as_view(), name='store-list'),
-    
+
     path('book_list/', views.BookListView.as_view(), name='book-list'),
     path('book/create/', views.BookCreateView.as_view(), name='book-create'),
     path('book/<int:pk>/update/', views.BookUpdateView.as_view(), name='book-update'),

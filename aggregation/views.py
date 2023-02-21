@@ -1,11 +1,9 @@
-
+from aggregation.forms import ContactForm
 from aggregation.forms import ReminderForm
 from aggregation.models import Author, Book, Publisher, Store
-from aggregation.forms import ContactForm
-
 from aggregation.tasks import tasks
-from django.contrib.auth.mixins import LoginRequiredMixin
 
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Avg, Count
 from django.shortcuts import redirect, render
 from django.urls import reverse, reverse_lazy
@@ -63,7 +61,7 @@ class BookListView(generic.ListView):
     model = Book
     paginate_by = 20
     context_object_name = "books"
-    
+
     def get_queryset(self):
         return Book.objects.select_related("publisher").order_by('name')
 
@@ -123,7 +121,6 @@ class BookDetailView(generic.DetailView):
         context = super(BookDetailView, self).get_context_data(**kwargs)
         context['available_stores'] = Store.objects.filter(books=self.object.id)
         context['books_authors'] = Author.objects.filter(book=self.object.id)
-
         return context
 
 
@@ -179,14 +176,14 @@ class BookDeleteView(LoginRequiredMixin, DeleteView):
     model = Book
     template_name = "aggregation/book_confirm_delete.html"
     success_url = reverse_lazy("aggregation:book-list")
-    
+
 
 class ContactFormView(FormView):
     template_name = 'aggregation/contact_form.html'
     initial = {'first_name': "User", "last_name": "Userenko", "email_address": "uu@example.com"}
     form_class = ContactForm
     success_url = reverse_lazy('aggregation:contact-form-thanks')
-    
+
     def form_valid(self, form):
         form.send_email()
         return super().form_valid(form)
