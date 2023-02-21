@@ -1,13 +1,18 @@
+
 from aggregation.forms import ReminderForm
 from aggregation.models import Author, Book, Publisher, Store
-from aggregation.tasks import tasks
+from aggregation.forms import ContactForm
 
+from aggregation.tasks import tasks
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from django.db.models import Avg, Count
 from django.shortcuts import redirect, render
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.utils import timezone
+from django.utils.datetime_safe import datetime
 from django.views import generic
+from django.views.generic.edit import CreateView, DeleteView, FormView, UpdateView
 
 
 # Create your views here.
@@ -33,6 +38,7 @@ def index(request):
 # List Views
 class AuthorListView(generic.ListView):
     model = Author
+    template_name = "aggregation/author_list.html"
     # paginate_by = 10
     queryset = Author.objects.annotate(num=Count("book__id"))
     context_object_name = "authors_books"
@@ -43,6 +49,7 @@ class AuthorListView(generic.ListView):
 
 class PublisherListView(generic.ListView):
     model = Publisher
+    template_name = "aggregation/publisher_list.html"
     # paginate_by = 10
     queryset = Publisher.objects.annotate(num=Count("book__id"))
     context_object_name = "publishers_books"
@@ -52,13 +59,18 @@ class PublisherListView(generic.ListView):
 
 
 class BookListView(generic.ListView):
+    template_name = "aggregation/book_list.html"
     model = Book
-    paginate_by = 25
-    queryset = Book.objects.select_related("publisher").order_by('name')
+    paginate_by = 20
+    context_object_name = "books"
+    
+    def get_queryset(self):
+        return Book.objects.select_related("publisher").order_by('name')
 
 
 class StoreListView(generic.ListView):
     model = Store
+    template_name = "aggregation/store_list.html"
     # paginate_by = 10
     queryset = Store.objects.annotate(num=Count("books__id"))
     context_object_name = "stores_books"
@@ -70,6 +82,7 @@ class StoreListView(generic.ListView):
 # Detail Views
 class AuthorDetailView(generic.DetailView):
     model = Author
+    template_name = "aggregation/author_detail.html"
     paginate_by = 5
 
     def get_context_data(self, **kwargs):
@@ -91,6 +104,7 @@ class AuthorDetailView(generic.DetailView):
 
 class PublisherDetailView(generic.DetailView):
     model = Publisher
+    template_name = "aggregation/publisher_detail.html"
 
     def get_context_data(self, **kwargs):
         context = super(PublisherDetailView, self).get_context_data(**kwargs)
@@ -103,6 +117,7 @@ class PublisherDetailView(generic.DetailView):
 
 class BookDetailView(generic.DetailView):
     model = Book
+    template_name = "aggregation/book_detail.html"
 
     def get_context_data(self, **kwargs):
         context = super(BookDetailView, self).get_context_data(**kwargs)
@@ -114,6 +129,7 @@ class BookDetailView(generic.DetailView):
 
 class StoreDetailView(generic.DetailView):
     model = Store
+    template_name = "aggregation/store_detail.html"
     paginate_by = 5
 
     def get_context_data(self, **kwargs):
@@ -137,3 +153,44 @@ def reminder_form(request):
     else:
         form = ReminderForm(initial={"email": "example@dj.com", "date_time": now, "reminder_text": "Reminder"})
     return render(request, "aggregation/reminder_form.html", {"form": form})
+
+
+# HW-16 =====================================================
+class BookCreateView(LoginRequiredMixin, CreateView):
+    raise_exception = True
+    template_name = "aggregation/book_create.html"
+    now = datetime.now()
+    model = Book
+    fields = ['name', 'pages', 'price', 'rating', 'authors', 'publisher', 'pubdate']
+    initial = {'name': "book name", 'pages': 123, 'price': 9.99, 'rating': 10, 'pubdate': now}
+    success_url = reverse_lazy("aggregation:book-list")
+
+
+class BookUpdateView(LoginRequiredMixin, UpdateView):
+    raise_exception = True
+    template_name = "aggregation/book_update.html"
+    model = Book
+    fields = ['name', 'pages', 'price', 'rating', 'authors', 'publisher', 'pubdate']
+    success_url = reverse_lazy("aggregation:book-list")
+
+
+class BookDeleteView(LoginRequiredMixin, DeleteView):
+    raise_exception = True
+    model = Book
+    template_name = "aggregation/book_confirm_delete.html"
+    success_url = reverse_lazy("aggregation:book-list")
+    
+
+class ContactFormView(FormView):
+    template_name = 'aggregation/contact_form.html'
+    initial = {'first_name': "User", "last_name": "Userenko", "email_address": "uu@example.com"}
+    form_class = ContactForm
+    success_url = reverse_lazy('aggregation:contact-form-thanks')
+    
+    def form_valid(self, form):
+        form.send_email()
+        return super().form_valid(form)
+
+
+class ContactTemplateView(generic.TemplateView):
+    template_name = 'aggregation/contact_form_thanks.html'
