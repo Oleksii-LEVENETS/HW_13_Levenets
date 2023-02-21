@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Confirm Delete</title>
+</head>
+<body>
+
+{% extends "base_generic.html" %}
+
+    {% block content %}
+
+        <form method="post">{% csrf_token %}
+
+             <h1>Are you sure you want to delete "{{ object }}"?</h1>
+             {{ form }}
+            <input type="submit" value="Confirm Deleting Book">
+        </form>
+
+    {% endblock %}
+
+</body>
+</html>

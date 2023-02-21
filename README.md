@@ -1,14 +1,46 @@
+# HW_16_Levenets_PythonPro_Class based views, pagination
 # HW_15_Levenets_PythonPro_Celery beat
 # HW_14_Levenets_PythonPro_Celery, django_email
 # HW_13_Levenets_PythonPro_annotate_aggregate
-==============================================
-HW_15: Celery beat.
-Заняття 16. Celery, celery beat, parsing, BeautifulSoup
+================================================
+HW_16: Class based views, pagination.    
+Заняття 17. Class based views, pagination  
+
+1. Основываясь на 13 ДЗ добавить, используя только classbased views,  
+- cтраницу создания объекта,  
+- страницу редактирования объекта,
+- страницу удаления объекта,  
+- страницу просмотра объекта,  
+- страницу просмотра списка объектов с пагинацией.  
+(Для одной модели на ваш выбор)
+
+2. Страница создания, изменения и удаление - login required. (используйте миксин)
+
+Чеклист:
+- models
+- forms - optional
+- views
+- urls
+- templates
+
+```bash
+python3 manage.py migrate
+```
+```bash
+python3 manage.py runserver
+```
+```bash
+./manage.py loaddata aggregation/fixtures/fresh_db.json
+```
+
+================================================
+HW_15: Celery beat.  
+Заняття 16. Celery, celery beat, parsing, BeautifulSoup  
 
 1. Добавить модели Авторов и Цитат (не забываем о связях), и зарегистрируйте их в админке.
-Использовать ресурс https://quotes.toscrape.com/
+Использовать ресурс https://quotes.toscrape.com/  
 2. Создать периодическую задачу которая будет добавлять по 5 НОВЫХ цитат (и их авторов с информацией) 
-каждый нечетный час. Когда цитаты закончатся - отправьте "себе" уведомление по почте что больше нет цитат (в консоль).
+каждый нечетный час. Когда цитаты закончатся - отправьте "себе" уведомление по почте что больше нет цитат (в консоль).  
 
 ```bash
 python3 manage.py runserver

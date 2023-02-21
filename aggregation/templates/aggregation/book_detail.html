@@ -30,6 +30,16 @@
   <p><strong>Price:</strong> {{ book.price }} $</p>
   <p><strong>Rating:</strong> {{ book.rating }}</p>
   <p><strong>Publisher:</strong> {{ book.publisher }}</p>
+
+        <button type="button">
+        <a href="{%  url 'aggregation:book-update' pk=book.pk %}">UPDATE BOOK</a>
+        </button>
+
+        <button type="button">
+        <a href="{%  url 'aggregation:book-confirm-delete' pk=book.pk %}">DELETE BOOK</a>
+        </button>
+
+<hr>
   <p><strong>Available in Stores:</strong></p>
   {% if available_stores %}
   <ul>

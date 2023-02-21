@@ -10,17 +10,24 @@
 
 {% block content %}
   <h1>Book List</h1>
-  {% if book_list %}
+  {% if books %}
   <ul>
-    {% for book in book_list %}
+    {% for book in books %}
       <li>
-        <a href="{{ book.get_absolute_url }}">{{ book.name }}</a> (ID: {{ book.id }}, Publisher: {{ book.publisher }})
+      <a href="{{ book.get_absolute_url }}">{{ book.name }}</a> (ID: {{ book.id }}, Publisher: {{ book.publisher }})
+        <button type="button">
+        <a href="{%  url 'aggregation:book-update' pk=book.pk %}">UPDATE</a>
+        </button>
+        <button type="button">
+        <a href="{%  url 'aggregation:book-confirm-delete' pk=book.pk %}">DELETE</a>
+        </button>
       </li>
     {% endfor %}
   </ul>
   {% else %}
     <p>There are no Books.</p>
   {% endif %}
+
 {% endblock %}
 
 </body>
