@@ -153,6 +153,31 @@ CELERY_RESULT_SERIALIZER = "json"
 CELERY_TIMEZONE = 'Europe/Kiev'
 
 
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+#         'LOCATION': 'redis://127.0.0.1:6379',
+#         'OPTIONS': {
+#             'db': '10',
+#             'parser_class': 'redis.connection.PythonParser',
+#             'pool_class': 'redis.BlockingConnectionPool',
+#         }
+#     }
+# }
+
+# Cache time to live is 15 seconds:
+CACHE_TTL = 15
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 

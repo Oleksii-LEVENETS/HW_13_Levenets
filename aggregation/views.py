@@ -3,17 +3,45 @@ from aggregation.forms import ReminderForm
 from aggregation.models import Author, Book, Publisher, Store
 from aggregation.tasks import tasks
 
+from django.conf import settings
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.cache.backends.base import DEFAULT_TIMEOUT
 from django.db.models import Avg, Count
 from django.shortcuts import redirect, render
 from django.urls import reverse, reverse_lazy
 from django.utils import timezone
 from django.utils.datetime_safe import datetime
+from django.utils.decorators import method_decorator
 from django.views import generic
+from django.views.decorators.cache import cache_page
 from django.views.generic.edit import CreateView, DeleteView, FormView, UpdateView
 
 
+CACHE_TTL = getattr(settings, 'CACHE_TTL', DEFAULT_TIMEOUT)
+
 # Create your views here.
+
+
+@method_decorator(cache_page(CACHE_TTL), "get")  # ToDo: cached!
+class BookListView(generic.ListView):
+    template_name = "aggregation/book_list.html"
+    model = Book
+    paginate_by = 750
+    context_object_name = "books"
+
+    def get_queryset(self):
+        return Book.objects.select_related("publisher").order_by('name')
+
+    # @method_decorator(cache_page(CACHE_TTL))  # ToDo: cached!
+    # def dispatch(self, request, *args, **kwargs):
+    #     return super().dispatch(request, *args, **kwargs)
+
+    # @method_decorator(cache_page(CACHE_TTL))  # ToDo: cached!
+    # def get(self, request, *args, **kwargs):
+    #     return super().get(request, *args, **kwargs)
+
+
+# @cache_page(CACHE_TTL)
 def index(request):
     """View function for home page of site."""
     # Generate counts of some of the main objects
@@ -22,11 +50,15 @@ def index(request):
     num_books = Book.objects.count()
     num_stores = Store.objects.count()
 
+    num_visits = request.session.get("num_visits", 0)
+    request.session["num_visits"] = num_visits + 1
+
     context = {
         'num_authors': num_authors,
         'num_publishers': num_publishers,
         'num_books': num_books,
         'num_stores': num_stores,
+        'num_visits': num_visits,
     }
 
     # Render the HTML template index.html with the data in the context variable
@@ -56,16 +88,6 @@ class PublisherListView(generic.ListView):
         return super().get_queryset().order_by('name')
 
 
-class BookListView(generic.ListView):
-    template_name = "aggregation/book_list.html"
-    model = Book
-    paginate_by = 20
-    context_object_name = "books"
-
-    def get_queryset(self):
-        return Book.objects.select_related("publisher").order_by('name')
-
-
 class StoreListView(generic.ListView):
     model = Store
     template_name = "aggregation/store_list.html"
@@ -78,10 +100,19 @@ class StoreListView(generic.ListView):
 
 
 # Detail Views
-class AuthorDetailView(generic.DetailView):
+class CacheMixin(object):
+    cache_timeout = 60
+
+    def dispatch(self, *args, **kwargs):
+        return cache_page(self.cache_timeout)(
+            super(CacheMixin, self).dispatch)(*args, **kwargs)
+
+
+class AuthorDetailView(CacheMixin, generic.DetailView):
+    cache_timeout = 10
     model = Author
     template_name = "aggregation/author_detail.html"
-    paginate_by = 5
+    paginate_by = 10
 
     def get_context_data(self, **kwargs):
         context = super(AuthorDetailView, self).get_context_data(**kwargs)

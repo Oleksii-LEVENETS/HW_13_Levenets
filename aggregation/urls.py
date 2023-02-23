@@ -1,4 +1,5 @@
 from django.urls import path
+from django.views.decorators.cache import cache_page  # noqa: F401
 
 from . import views
 
@@ -6,6 +7,7 @@ from . import views
 app_name = "aggregation"
 
 urlpatterns = [
+    # path('', cache_page(10)(views.index), name='index'),  # ToDo: cached!
     path('', views.index, name='index'),
 
     path('author_list/', views.AuthorListView.as_view(), name='author-list'),

@@ -1,7 +1,53 @@
+# HW_17_Levenets_PythonPro_Redis, Django-cache, Pagination  
 # HW_16_Levenets_PythonPro_Class based views, pagination
 # HW_15_Levenets_PythonPro_Celery beat
 # HW_14_Levenets_PythonPro_Celery, django_email
 # HW_13_Levenets_PythonPro_annotate_aggregate
+================================================  
+ДЗ 17. Django Cache  
+Заняття 18. Redis, Django-cache, Pagination
+
+1. Основываясь на 15 дз добавить:
+- Фикстуры для модели и связанной с ней моделью (Например посты и их автора, цитаты и их автора, автор и его книги,
+города и их жители, и т.д.)
+https://docs.djangoproject.com/en/4.1/ref/django-admin/#dumpdata
+- Фикстуры хранить в папке fixtures
+2. Альтернативно - написать менеджмент команду для генерации этих же данных из случайных значений.
+Количество записей должно быть большим - 500-1000+.
+3. Выводить это все на страницу, используя агрегацию/аннотация для кверисет, что бы добрать недостающие данные, 
+в виде вложенного списка, таблицы или блоками.
+4. Реализовать на странице пагинацию по большому количеству элементов (100-1000)
+(все вышеперечисленное - намеренное ухудшение страницы, что бы хоть как-то оправдать кеширование)
+5. Добавить кеширование на эту страницу, и остальные страницы для которых это "действительно имеет смысл".
+Для кеширования используйте Redis + django-redis (или встроенный бекенд для редиса если Джанго версии 4+).
+
+```bash
+python3 manage.py migrate
+```
+
+# Option_1
+# Менеджмент-команда create_new_models реализована через celery
+```bash
+celery -A core worker -l INFO  
+```
+```bash
+./manage.py create_new_models  
+```
+```bash
+./manage.py loaddata aggregation/fixtures/users.json
+```
+
+or
+
+# Option_2
+```bash
+./manage.py loaddata aggregation/fixtures/fresh_db.json
+```
+```bash
+python3 manage.py runserver
+```
+
+
 ================================================
 HW_16: Class based views, pagination.    
 Заняття 17. Class based views, pagination  
